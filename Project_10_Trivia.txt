@@ -1,0 +1,49 @@
+1
+Q: How many colors are there in a rainbow?
+A: 7 [Correct]
+B: 8 
+
+2
+Q: How many legs does a spider have?
+A: Six
+B: Eight [Correct]
+
+3
+Q: What kind of cat is considered bad luck?
+A: Black Cats [Correct]
+b: White Cats
+
+4
+Q: Which is the fastest land animal?
+A: The Cheetah [Correct]
+B: The Leopard
+
+5
+Q: What is the largest mammal in the world?
+A: A Whale [Correct]
+B: An Elephant
+
+6
+Q: How many continents are there in the world?
+A: Six
+B: Seven [Correct]
+
+7
+Q: What is the name of molten rock after a volcanic eruption?
+A: Magma
+B: Lava [Correct]
+
+8
+Q: Who painted the 'Starry Night?
+A: Leonardo DaVinci
+B: Vincent Van Gogh [Correct]
+
+9
+Q: What is the largest continent?
+A: Asia [Correct]
+B: Africa
+
+10
+Q: What is the largest planet in our solar system?
+A: Jupiter [Correct]
+B: Uranus

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - LeftSatelite
+  - RightSatelite
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2816949675
+    locked: 0
+  - name: Meteor
+    uniqueID: 747907193
+    locked: 0
+  - name: Player
+    uniqueID: 1730286203
+    locked: 0
+  - name: Big Dot
+    uniqueID: 1010160969
+    locked: 0
+  - name: Small Dot
+    uniqueID: 2377358985
+    locked: 0
