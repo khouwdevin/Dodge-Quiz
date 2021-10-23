@@ -63,7 +63,10 @@ public class MoveRocket : MonoBehaviour
             gyro.enabled = true;
             TransRocketGyro();
             animator.SetFloat("Speed", Mathf.Abs(rb.velocity.magnitude));
-            move_audio.Play();
+            if (rb.velocity.magnitude > 0.5)
+            {
+                move_audio.Play();
+            }    
         }
 
         else {
@@ -89,7 +92,10 @@ public class MoveRocket : MonoBehaviour
                 else if (joystick.phase == TouchPhase.Moved || joystick.phase == TouchPhase.Stationary)
                 {
                     TransRocket();
-                    move_audio.Play();
+                    if (rb.velocity.magnitude > 0.5)
+                    {
+                        move_audio.Play();
+                    }
                 }
 
                 else if (joystick.phase == TouchPhase.Ended)

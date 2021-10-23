@@ -128,14 +128,14 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Wrong");
             wrong.SetActive(true);
-            true_audio.Play();
+            false_audio.Play();
             Timer.Clock(5f);
         }
         else
         {
             Debug.Log("True");
             pass.SetActive(true);
-            false_audio.Play();
+            true_audio.Play();
             Timer.Clock(5f);
         }
     }
