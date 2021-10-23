@@ -9,6 +9,7 @@ public class SpawnPoint : MonoBehaviour
     public GameObject obstacle;
 
     float speed = 30f;
+    float rotation = 10f;
 
     public static bool Isfirts = true;
 
@@ -31,6 +32,7 @@ public class SpawnPoint : MonoBehaviour
         counter = 1;
         try
         {
+            //clone_meteor.transform.Rotate(Vector3.forward * rotation * Time.deltaTime);
             clone_meteor.transform.Translate(Vector2.down * speed * Time.deltaTime);
 
             if (clone_meteor.transform.position.y < -51.7)

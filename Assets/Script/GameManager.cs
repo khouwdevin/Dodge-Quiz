@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
 
     public static string player_answer;
 
+    public AudioSource true_audio, false_audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -106,6 +108,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Correct");
             pass.SetActive(true);
+            true_audio.Play();
             //change the factText to correct
             Timer.Clock(5f);
         }
@@ -113,6 +116,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Wrong");
             wrong.SetActive(true);
+            false_audio.Play();
             Timer.Clock(5f);
         }
     }
@@ -124,12 +128,14 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Wrong");
             wrong.SetActive(true);
+            true_audio.Play();
             Timer.Clock(5f);
         }
         else
         {
             Debug.Log("True");
             pass.SetActive(true);
+            false_audio.Play();
             Timer.Clock(5f);
         }
     }

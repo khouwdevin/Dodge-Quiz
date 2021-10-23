@@ -29,6 +29,8 @@ public class MoveRocket : MonoBehaviour
 
     public static Gyroscope gyro;
 
+    public AudioSource move_audio, hit_audio;
+
     [SerializeField]
     public int health = 3;
 
@@ -61,6 +63,7 @@ public class MoveRocket : MonoBehaviour
             gyro.enabled = true;
             TransRocketGyro();
             animator.SetFloat("Speed", Mathf.Abs(rb.velocity.magnitude));
+            move_audio.Play();
         }
 
         else {
@@ -86,6 +89,7 @@ public class MoveRocket : MonoBehaviour
                 else if (joystick.phase == TouchPhase.Moved || joystick.phase == TouchPhase.Stationary)
                 {
                     TransRocket();
+                    move_audio.Play();
                 }
 
                 else if (joystick.phase == TouchPhase.Ended)
@@ -142,6 +146,10 @@ public class MoveRocket : MonoBehaviour
         else if (collision.CompareTag("RightSatelite"))
         {
             GameManager.player_answer = "right";
+        }
+        else if (collision.CompareTag("Obstacle"))
+        {
+            hit_audio.Play();
         }
     }
 }

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - LeftSatelite
   - RightSatelite
+  - MaterialText
+  - MaterialButtonLayer
+  - Obstacle
   layers:
   - Default
   - TransparentFX

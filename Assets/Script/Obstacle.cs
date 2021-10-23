@@ -13,7 +13,7 @@ public class Obstacle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,6 +26,7 @@ public class Obstacle : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            other.gameObject.GetComponent<Animator>().SetTrigger("Hit");
             other.GetComponent<MoveRocket>().health -= damage;
             Destroy(gameObject);
             //Debug.Log("Hello ");
